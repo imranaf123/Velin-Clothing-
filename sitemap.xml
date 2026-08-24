@@ -1,63 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://velin.com/</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/category/t-shirts</loc>
+    <loc>https://velin.com/category/t-shirts</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/category/shirts</loc>
+    <loc>https://velin.com/category/shirts</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/category/trousers</loc>
+    <loc>https://velin.com/category/trousers</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/category/hoodies</loc>
+    <loc>https://velin.com/category/hoodies</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/category/jackets</loc>
+    <loc>https://velin.com/category/jackets</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/category/accessories</loc>
+    <loc>https://velin.com/category/accessories</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/collections/the-essentials</loc>
+    <loc>https://velin.com/collections/the-essentials</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/collections/new-season</loc>
+    <loc>https://velin.com/collections/new-season</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://velin.com/#/collections/everyday-edit</loc>
+    <loc>https://velin.com/collections/everyday-edit</loc>
     <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
+
 </urlset>
