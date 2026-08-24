@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Dynamic SEO Title & Description (managed by app.js) -->
+  <title>VELIN | Elevated Everyday Clothing</title>
+  <meta name="description" content="Premium everyday clothing designed for modern life. Clean silhouettes, premium fabrics, and timeless design. Shop the collection online.">
+  
+  <!-- Canonical & Open Graph (managed dynamically) -->
+  <link rel="canonical" href="https://velin.com/">
+  <meta property="og:title" content="VELIN | Elevated Everyday Clothing">
+  <meta property="og:description" content="Premium everyday clothing designed for modern life. Clean silhouettes, premium fabrics, and timeless design.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://velin.com/images/hero.jpg">
+  <meta property="og:url" content="https://velin.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div id="announcement-bar" class="announcement-bar hidden">
+    <div class="announcement-container">
+      <div id="announcement-text" class="announcement-text">
+        <!-- Injected via settings.json -->
+      </div>
+      <button id="close-announcement" class="close-announcement" aria-label="Dismiss announcement">×</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="main-header" class="main-header">
+    <div class="header-container">
+      
+      <!-- Mobile: Hamburger Menu -->
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Logo & Monogram (Dynamic fallback if settings not loaded) -->
+      <div class="header-logo">
+        <a href="#/" class="logo-link" aria-label="VELIN homepage">
+          <span id="logo-monogram" class="logo-monogram">
+            <!-- Inline SVG VL Monogram will go here -->
+          </span>
+          <span class="logo-wordmark">VELIN</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#/category/new-arrivals" class="nav-link">NEW ARRIVALS</a></li>
+          
+          <!-- Dropdown: Clothing -->
+          <li class="nav-dropdown-trigger">
+            <a href="#/category/clothing" class="nav-link">
+              CLOTHING
+              <svg class="dropdown-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu" id="clothing-dropdown">
+              <!-- Injected dynamically from categories.json -->
+            </div>
+          </li>
+
+          <!-- Dropdown: Collections -->
+          <li class="nav-dropdown-trigger">
+            <a href="#/collections" class="nav-link">
+              COLLECTIONS
+              <svg class="dropdown-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu" id="collections-dropdown">
+              <!-- Injected dynamically from collections.json -->
+            </div>
+          </li>
+
+          <li><a href="#/category/accessories" class="nav-link">ACCESSORIES</a></li>
+          <li><a href="#/about" class="nav-link">ABOUT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Utility Icons -->
+      <div class="header-utilities">
+        
+        <!-- Search Trigger -->
+        <button id="search-trigger" class="utility-btn" aria-label="Search Catalog" aria-haspopup="dialog">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Account (For aesthetic / simulation only) -->
+        <button id="account-trigger" class="utility-btn desktop-only" aria-label="Account details">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <!-- Wishlist -->
+        <a href="#/wishlist" class="utility-btn relative" aria-label="Wishlist items">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span id="wishlist-count" class="count-badge hidden">0</span>
+        </a>
+
+        <!-- Shopping Bag -->
+        <button id="cart-trigger" class="utility-btn relative" aria-label="Open shopping cart" aria-haspopup="dialog">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span id="cart-count" class="count-badge hidden">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div id="mobile-menu-drawer" class="drawer drawer-left hidden" aria-hidden="true">
+    <div class="drawer-overlay" id="mobile-menu-overlay"></div>
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <span class="drawer-title uppercase tracking-widest">MENU</span>
+        <button id="mobile-menu-close" class="close-drawer-btn" aria-label="Close menu">×</button>
+      </div>
+      <div class="drawer-body">
+        <ul class="mobile-nav-links">
+          <li><a href="#/category/new-arrivals" class="mobile-nav-link">NEW ARRIVALS</a></li>
+          <li>
+            <div class="mobile-accordion-header" data-target="mobile-clothing-submenu">
+              <span>CLOTHING</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <ul id="mobile-clothing-submenu" class="mobile-submenu hidden">
+              <!-- Injected from categories -->
+            </ul>
+          </li>
+          <li>
+            <div class="mobile-accordion-header" data-target="mobile-collections-submenu">
+              <span>COLLECTIONS</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <ul id="mobile-collections-submenu" class="mobile-submenu hidden">
+              <!-- Injected from collections -->
+            </ul>
+          </li>
+          <li><a href="#/category/accessories" class="mobile-nav-link">ACCESSORIES</a></li>
+          <li><a href="#/about" class="mobile-nav-link">ABOUT</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <p class="text-xs text-muted mb-4 uppercase tracking-widest">Customer Concierge</p>
+          <a href="https://wa.me/923001234567" id="mobile-whatsapp-btn" class="flex items-center gap-2 mb-2 text-sm text-primary" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+            WhatsApp Support
+          </a>
+          <p id="mobile-address" class="text-xs text-muted leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Drawer -->
+  <div id="cart-drawer" class="drawer drawer-right hidden" aria-hidden="true">
+    <div class="drawer-overlay" id="cart-overlay"></div>
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <span class="drawer-title uppercase tracking-widest">YOUR BAG (<span class="cart-items-count">0</span>)</span>
+        <button id="cart-close" class="close-drawer-btn" aria-label="Close cart">×</button>
+      </div>
+      
+      <!-- Free Shipping Bar -->
+      <div id="free-shipping-bar" class="free-shipping-bar">
+        <!-- Injected dynamically based on subtotal -->
+      </div>
+
+      <div class="drawer-body" id="cart-drawer-body">
+        <!-- Dynamic Cart Items list or empty state -->
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="drawer-footer" id="cart-drawer-footer">
+        <div class="cart-totals">
+          <div class="total-row">
+            <span class="text-muted">Subtotal</span>
+            <span id="cart-subtotal" class="font-medium">Rs. 0</span>
+          </div>
+          <p class="text-xs text-muted italic mt-1">Shipping & taxes calculated at checkout. Order will be confirmed on WhatsApp.</p>
+        </div>
+        <div class="cart-actions mt-4 flex flex-col gap-2">
+          <button id="cart-whatsapp-checkout" class="btn btn-primary w-full tracking-widest text-sm flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+            CONFIRM ORDER VIA WHATSAPP
+          </button>
+          <a href="#/" id="cart-continue-shopping" class="text-xs text-center tracking-widest text-muted hover:underline mt-2 uppercase">CONTINUE SHOPPING</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Overlay Dialog -->
+  <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-modal="true" aria-label="Search catalog">
+    <div class="search-overlay-bg" id="search-overlay-close-bg"></div>
+    <div class="search-overlay-content">
+      <div class="search-header">
+        <svg class="icon-svg search-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" id="search-input" class="search-input" placeholder="SEARCH FOR PRODUCTS, CATEGORIES, TAGS..." autocomplete="off">
+        <button id="search-close" class="close-search-btn" aria-label="Close search">×</button>
+      </div>
+      <div class="search-body" id="search-results-container">
+        <!-- Results or empty state dynamic -->
+        <div class="search-initial-state">
+          <p class="text-xs uppercase tracking-widest text-muted mb-4">Suggested Searches</p>
+          <div class="flex flex-wrap gap-2" id="search-suggestions">
+            <button class="suggestion-tag" data-query="Tee">Oversized Tee</button>
+            <button class="suggestion-tag" data-query="Linen">Linen</button>
+            <button class="suggestion-tag" data-query="Shirt">Shirt</button>
+            <button class="suggestion-tag" data-query="Hoodie">Hoodie</button>
+            <button class="suggestion-tag" data-query="Accessories">Accessories</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Dynamic View Container -->
+  <main id="app-root">
+    <!-- Dynamic views (Home, Category, Collection, Product, Wishlist, Search Results) are rendered here -->
+    <div class="loading-container">
+      <div class="loader"></div>
+      <p class="uppercase tracking-widest text-xs mt-4">Loading VELIN...</p>
+    </div>
+  </main>
+
+  <!-- Newsletter Section (Rendered on Home page or dynamically inside home view) -->
+  <!-- Brand Story Editorial (Rendered inside home view) -->
+
+  <!-- Footer -->
+  <footer id="main-footer" class="main-footer">
+    <div class="footer-container">
+      
+      <!-- Logo + Tagline Column -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo mb-4">
+          <span class="logo-wordmark tracking-widest">VELIN</span>
+        </div>
+        <p class="footer-tagline italic font-serif text-lg mb-6">"Everyday pieces, elevated."</p>
+        <div class="footer-socials flex gap-4">
+          <a href="https://instagram.com/velin.official" id="footer-social-instagram" class="social-icon" aria-label="Instagram" target="_blank">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://facebook.com/velin.official" id="footer-social-facebook" class="social-icon" aria-label="Facebook" target="_blank">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@velin.official" id="footer-social-tiktok" class="social-icon" aria-label="TikTok" target="_blank">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.86-.74-3.94-1.74-.22-.2-.42-.42-.61-.65V15c0 1.89-.5 3.81-1.68 5.28-1.5 1.86-3.89 2.82-6.24 2.66-2.61-.18-5.06-1.84-6.04-4.27C.68 15.68-.07 12.38.64 9.38c.63-2.68 2.64-5.02 5.24-5.89 1.4-.47 2.9-.53 4.33-.18v4.11a5.074 5.074 0 00-2.8 1.48c-1.09 1.19-1.46 2.94-1.01 4.51.4 1.4 1.57 2.58 2.97 2.91 1.76.42 3.75-.42 4.41-2.11.23-.6.3-1.25.29-1.89V0h.01c-.1-.01-.19.01-.27.02z"/></svg>
+          </a>
+          <a href="https://wa.me/923001234567" id="footer-social-whatsapp" class="social-icon" aria-label="WhatsApp" target="_blank">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 11.948 0c3.179.001 6.161 1.24 8.403 3.487 2.243 2.247 3.48 5.23 3.474 8.41-.015 6.545-5.352 11.884-11.907 11.884h-.005c-2.003-.002-3.96-.502-5.713-1.458L0 24zm6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c5.454 0 9.888-4.436 9.891-9.888a9.825 9.825 0 00-2.893-6.994c-1.866-1.868-4.348-2.898-6.988-2.898a9.888 9.888 0 00-9.888 9.884c-.001 2.096.547 4.142 1.588 5.945L4.85 20.76l4.411-1.154c1.71.933 3.61 1.423 5.531 1.426V21h.001zm11.137-7.956c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Column: SHOP -->
+      <div class="footer-col">
+        <span class="footer-heading">SHOP</span>
+        <ul class="footer-links">
+          <li><a href="#/category/new-arrivals" class="footer-link">New Arrivals</a></li>
+          <li><a href="#/category/clothing" class="footer-link">Clothing</a></li>
+          <li><a href="#/collections" class="footer-link">Collections</a></li>
+          <li><a href="#/category/accessories" class="footer-link">Accessories</a></li>
+          <li><a href="#/category/sale" class="footer-link">Sale</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column: HELP -->
+      <div class="footer-col">
+        <span class="footer-heading">HELP</span>
+        <ul class="footer-links">
+          <li><a href="#/about" class="footer-link">Contact Us</a></li>
+          <li><a href="#/about" class="footer-link">Shipping</a></li>
+          <li><a href="#/about" class="footer-link">Returns & Exchanges</a></li>
+          <li><button class="footer-link size-guide-trigger">Size Guide</button></li>
+          <li><a href="#/about" class="footer-link">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column: ABOUT -->
+      <div class="footer-col">
+        <span class="footer-heading">ABOUT</span>
+        <ul class="footer-links">
+          <li><a href="#/about" class="footer-link">Our Story</a></li>
+          <li><a href="#/about" class="footer-link">Sustainability</a></li>
+          <li><a href="#/about" class="footer-link">Careers</a></li>
+          <li><a href="#/about" class="footer-link">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column: CONTACT -->
+      <div class="footer-col contact-col">
+        <span class="footer-heading">CONTACT</span>
+        <ul class="footer-links font-sans text-sm">
+          <li class="flex items-center gap-2 mb-2">
+            <span class="text-muted">WhatsApp:</span>
+            <a href="https://wa.me/923001234567" id="footer-contact-whatsapp" class="hover:underline text-primary">+92 300 1234567</a>
+          </li>
+          <li class="flex items-center gap-2 mb-2">
+            <span class="text-muted">Email:</span>
+            <a href="mailto:concierge@velin.com" id="footer-contact-email" class="hover:underline text-primary">concierge@velin.com</a>
+          </li>
+          <li class="leading-relaxed text-muted text-xs" id="footer-contact-address">
+            12-C, Ghalib Rd, Gulberg III, Lahore, Pakistan
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom copyright bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p class="copyright-text">© 2026 VELIN. All rights reserved.</p>
+        <p class="credit-text">Designed & Developed by Imran AF</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <div id="mobile-bottom-nav" class="mobile-bottom-nav">
+    <a href="#/" class="bottom-nav-tab active" data-tab="home" aria-label="Go to Home">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span class="bottom-nav-label">Home</span>
+    </a>
+    <a href="#/category/clothing" class="bottom-nav-tab" data-tab="shop" aria-label="Go to Shop">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="3" y="3" width="7" height="7"></rect>
+        <rect x="14" y="3" width="7" height="7"></rect>
+        <rect x="14" y="14" width="7" height="7"></rect>
+        <rect x="3" y="14" width="7" height="7"></rect>
+      </svg>
+      <span class="bottom-nav-label">Shop</span>
+    </a>
+    <a href="#/collections" class="bottom-nav-tab" data-tab="categories" aria-label="Browse Categories">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <line x1="8" y1="6" x2="21" y2="6"></line>
+        <line x1="8" y1="12" x2="21" y2="12"></line>
+        <line x1="8" y1="18" x2="21" y2="18"></line>
+        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+      </svg>
+      <span class="bottom-nav-label">Categories</span>
+    </a>
+    <a href="#/wishlist" class="bottom-nav-tab" data-tab="wishlist" aria-label="Go to Wishlist">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+      <span class="bottom-nav-label">Wishlist</span>
+    </a>
+    <button id="mobile-cart-btn" class="bottom-nav-tab" aria-label="Open Shopping Bag">
+      <span class="relative inline-block">
+        <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span id="mobile-cart-count" class="count-badge hidden">0</span>
+      </span>
+      <span class="bottom-nav-label">Bag</span>
+    </button>
+  </div>
+
+  <!-- Size Guide Modal -->
+  <div id="size-guide-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="size-guide-title">
+    <div class="modal-backdrop" id="size-guide-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="size-guide-title" class="text-lg uppercase tracking-widest font-serif font-medium">SIZE GUIDE</h3>
+        <button id="size-guide-close" class="close-modal-btn" aria-label="Close modal">×</button>
+      </div>
+      <div class="modal-body overflow-y-auto max-h-[70vh]">
+        <p class="text-xs text-muted mb-4">All sizes in inches. Measurements refer to body sizing, not garment sizing.</p>
+        <div class="table-container mb-6">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th>SIZE</th>
+                <th>CHEST (IN)</th>
+                <th>WAIST (IN)</th>
+                <th>HIP (IN)</th>
+                <th>SLEEVE (IN)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>XS</td>
+                <td>32 - 34</td>
+                <td>26 - 28</td>
+                <td>32 - 34</td>
+                <td>31.5</td>
+              </tr>
+              <tr>
+                <td>S</td>
+                <td>35 - 37</td>
+                <td>29 - 31</td>
+                <td>35 - 37</td>
+                <td>32.5</td>
+              </tr>
+              <tr>
+                <td>M</td>
+                <td>38 - 40</td>
+                <td>32 - 34</td>
+                <td>38 - 40</td>
+                <td>33.5</td>
+              </tr>
+              <tr>
+                <td>L</td>
+                <td>41 - 43</td>
+                <td>35 - 37</td>
+                <td>41 - 43</td>
+                <td>34.5</td>
+              </tr>
+              <tr>
+                <td>XL</td>
+                <td>44 - 46</td>
+                <td>38 - 40</td>
+                <td>44 - 46</td>
+                <td>35.5</td>
+              </tr>
+              <tr>
+                <td>XXL</td>
+                <td>47 - 49</td>
+                <td>41 - 43</td>
+                <td>47 - 49</td>
+                <td>36.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-muted italic">Note: For our oversized items (like the Essential Oversized Tee), take your standard size for a relaxed, slightly slouchy fit. For structured items, size up if between sizes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
