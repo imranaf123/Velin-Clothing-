@@ -1,0 +1,68 @@
+{
+  "branding": {
+    "name": "VELIN",
+    "tagline": "Everyday pieces, elevated.",
+    "description": "Elevated everyday clothing designed for modern life. Premium fabrics, timeless design, and quiet confidence.",
+    "logoSymbol": "<svg viewBox=\"0 0 100 100\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"100\" height=\"100\" rx=\"24\" fill=\"var(--color-accent)\"/><path d=\"M28 35 L45 68 L50 58 L38 35 Z\" fill=\"var(--color-bg)\"/><path d=\"M50 58 L55 68 L72 35 L62 35 Z\" fill=\"var(--color-bg)\"/></svg>",
+    "favicon": "images/branding/favicon.png"
+  },
+  "contact": {
+    "phone": "+92 3133801788",
+    "whatsapp": "923133801788",
+    "email": "concierge@velin.com",
+    "address": "12-C, Ghalib Rd, Gulberg III, Lahore, Pakistan",
+    "socials": {
+      "instagram": "https://instagram.com/velin.official",
+      "facebook": "https://facebook.com/velin.official",
+      "tiktok": "https://tiktok.com/@velin.official",
+      "whatsapp": "https://wa.me/9203133801788"
+    }
+  },
+  "store": {
+    "currencyCode": "PKR",
+    "currencySymbol": "Rs.",
+    "freeDeliveryThreshold": 5000,
+    "freeDeliveryMessage": "FREE DELIVERY IN PAKISTAN ON ORDERS ABOVE PKR 5,000",
+    "returnPolicy": "Easy returns & exchanges within 14 days",
+    "shippingPolicy": "Standard delivery: 3-5 business days across Pakistan. International shipping available."
+  },
+  "hero": {
+    "mobileMediaType": "video",
+    "mobileMedia": "video/hero.mp4",
+    "desktopMediaType": "image",
+    "desktopMedia": "images/hero.jpg",
+    "desktopPoster": "images/hero.jpg",
+    "headline": "Elevated\nEveryday.",
+    "supportingCopy": "Premium fabrics. Timeless design. Made for the way you live.",
+    "primaryCTA": {
+      "text": "SHOP NEW ARRIVALS",
+      "link": "#/category/new-arrivals"
+    },
+    "secondaryCTA": {
+      "text": "EXPLORE COLLECTIONS",
+      "link": "#/collections"
+    },
+    "overlayOpacity": 0.1,
+    "overlayColor": "#000000"
+  },
+  "announcementBar": {
+    "enabled": true,
+    "messages": [
+      "FREE DELIVERY IN PAKISTAN ON ORDERS ABOVE PKR 5,000",
+      "EASY RETURNS & EXCHANGES WITHIN 14 DAYS"
+    ]
+  },
+  "featureFlags": {
+    "announcementBar": true,
+    "hero": true,
+    "benefits": true,
+    "categories": true,
+    "newArrivals": true,
+    "featuredCollection": true,
+    "promoBanner": true,
+    "brandStory": true,
+    "newsletter": true,
+    "saleSection": true,
+    "mobileBottomNav": true
+  }
+}

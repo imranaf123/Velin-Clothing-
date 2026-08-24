@@ -1,0 +1,417 @@
+[
+  {
+    "id": "prod-01",
+    "name": "Essential Oversized Tee",
+    "slug": "essential-oversized-tee",
+    "description": "A relaxed everyday T-shirt made from heavyweight organic cotton, designed with a clean silhouette, slightly dropped shoulders, and a thick ribbed neckline that retains its shape. This is the foundation of the elevated modern uniform.",
+    "category": "t-shirts",
+    "collections": ["the-essentials", "new-season"],
+    "price": 2490,
+    "compareAtPrice": 3200,
+    "currency": "PKR",
+    "images": [
+      "images/products/tee-black-1.jpg",
+      "images/products/tee-black-2.jpg",
+      "images/products/tee-cream-1.jpg",
+      "images/products/tee-olive-1.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1E1B18",
+        "images": ["images/products/tee-black-1.jpg", "images/products/tee-black-2.jpg"]
+      },
+      {
+        "name": "Cream",
+        "hex": "#F3EEE4",
+        "images": ["images/products/tee-cream-1.jpg", "images/products/tee-cream-2.jpg"]
+      },
+      {
+        "name": "Olive",
+        "hex": "#5F654F",
+        "images": ["images/products/tee-olive-1.jpg", "images/products/tee-olive-2.jpg"]
+      },
+      {
+        "name": "Brown",
+        "hex": "#5A4C40",
+        "images": ["images/products/tee-brown-1.jpg", "images/products/tee-brown-2.jpg"]
+      }
+    ],
+    "stockStatus": "in-stock",
+    "availability": true,
+    "featured": true,
+    "newArrival": true,
+    "sale": true,
+    "badges": ["NEW", "SALE"],
+    "tags": ["premium", "heavyweight", "organic-cotton", "oversized", "unisex"],
+    "details": [
+      "260 GSM heavy organic cotton jersey",
+      "Double-needle stitched hem and sleeves",
+      "Thick 1.2-inch ribbed mock-neck collar",
+      "Pre-shrunk to maintain shape and fit",
+      "Made in Pakistan"
+    ],
+    "material": "100% Organic Cotton",
+    "fit": "Oversized, relaxed drape. Take your normal size for a slouchy look, or size down for a standard fit.",
+    "care": "Machine wash cold inside out with similar colors. Hang dry in shade. Iron medium if needed.",
+    "seo": {
+      "title": "Essential Oversized Tee — Heavyweight Organic Cotton | VELIN",
+      "description": "Shop the Essential Oversized Tee from VELIN. Crafted from 260 GSM organic cotton with a structured neck and relaxed fit. Premium everyday wear.",
+      "canonicalPath": "/product/essential-oversized-tee",
+      "ogImage": "images/products/tee-black-1.jpg"
+    }
+  },
+  {
+    "id": "prod-02",
+    "name": "Relaxed Fit Linen Shirt",
+    "slug": "relaxed-fit-linen-shirt",
+    "description": "Crafted from pure Belgian flax, this relaxed-fit shirt is washed for exceptional softness. Features a classic camp collar, seamless French placket, and custom horn buttons. A breathable, timeless silhouette for warm climates.",
+    "category": "shirts",
+    "collections": ["the-essentials", "everyday-edit"],
+    "price": 4290,
+    "compareAtPrice": 5500,
+    "currency": "PKR",
+    "images": [
+      "images/products/shirt-sand-1.jpg",
+      "images/products/shirt-sand-2.jpg",
+      "images/products/shirt-white-1.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      {
+        "name": "Sand",
+        "hex": "#D2C5B4",
+        "images": ["images/products/shirt-sand-1.jpg", "images/products/shirt-sand-2.jpg"]
+      },
+      {
+        "name": "White",
+        "hex": "#FFFFFF",
+        "images": ["images/products/shirt-white-1.jpg", "images/products/shirt-white-2.jpg"]
+      }
+    ],
+    "stockStatus": "in-stock",
+    "availability": true,
+    "featured": true,
+    "newArrival": false,
+    "sale": true,
+    "badges": ["BESTSELLER"],
+    "tags": ["linen", "breathable", "camp-collar", "summer"],
+    "details": [
+      "100% Belgian flax linen",
+      "Breathable, lightweight, and pre-washed",
+      "Relaxed chest with straight hem and side splits",
+      "Sustainable biological horn buttons",
+      "Crafted in Lahore"
+    ],
+    "material": "100% Belgian Flax Linen",
+    "fit": "Relaxed fit. Fits true to size.",
+    "care": "Hand wash or gentle machine wash cold. Do not tumble dry. Hang dry. Iron slightly damp.",
+    "seo": {
+      "title": "Relaxed Fit Linen Shirt — Pure Flax | VELIN",
+      "description": "Elevate your summer wardrobe with VELIN's Relaxed Fit Linen Shirt. Tailored from 100% pure Belgian flax linen for quiet luxury and exceptional breathability.",
+      "canonicalPath": "/product/relaxed-fit-linen-shirt",
+      "ogImage": "images/products/shirt-sand-1.jpg"
+    }
+  },
+  {
+    "id": "prod-03",
+    "name": "Tailored Linen Trousers",
+    "slug": "tailored-linen-trousers",
+    "description": "These tailored trousers combine the lightweight breeze of premium linen with a crisp, smart structure. Featuring an elasticated back waistband for comfort, front pleats, a button closure, and a straight-leg drape.",
+    "category": "trousers",
+    "collections": ["the-essentials", "everyday-edit"],
+    "price": 4890,
+    "compareAtPrice": 0,
+    "currency": "PKR",
+    "images": [
+      "images/products/trousers-sand-1.jpg",
+      "images/products/trousers-sand-2.jpg",
+      "images/products/trousers-charcoal-1.jpg"
+    ],
+    "sizes": ["30", "32", "34", "36"],
+    "colors": [
+      {
+        "name": "Sand",
+        "hex": "#D2C5B4",
+        "images": ["images/products/trousers-sand-1.jpg", "images/products/trousers-sand-2.jpg"]
+      },
+      {
+        "name": "Charcoal",
+        "hex": "#302E2B",
+        "images": ["images/products/trousers-charcoal-1.jpg", "images/products/trousers-charcoal-2.jpg"]
+      }
+    ],
+    "stockStatus": "low-stock",
+    "availability": true,
+    "featured": true,
+    "newArrival": false,
+    "sale": false,
+    "badges": ["FEW LEFT"],
+    "tags": ["tailored", "linen", "pleated", "straight-leg"],
+    "details": [
+      "100% Pure linen fabric",
+      "Relaxed straight-leg cut with elegant front pleating",
+      "Elasticated back waist with belt loops",
+      "Slanted side pockets and button-through rear pockets",
+      "YKK zip fly and horn button closure"
+    ],
+    "material": "100% Premium Flax Linen",
+    "fit": "Straight leg. True to size. Model is 6'1\" wearing size 32.",
+    "care": "Dry clean recommended, or hand wash cold. Lay flat to dry. Hot iron.",
+    "seo": {
+      "title": "Tailored Linen Trousers — Classic Pleated Fit | VELIN",
+      "description": "Discover VELIN's Tailored Linen Trousers. Pleated front, straight-leg drape, and comfortable elastic back waist. Perfect smart-casual linen trousers.",
+      "canonicalPath": "/product/tailored-linen-trousers",
+      "ogImage": "images/products/trousers-sand-1.jpg"
+    }
+  },
+  {
+    "id": "prod-04",
+    "name": "Structured Fleece Hoodie",
+    "slug": "structured-fleece-hoodie",
+    "description": "An ultra-thick, double-lined hoodie crafted from loopback French terry cotton. Engineered with side rib panels, flatlock seams, and a roomy double-layered hood without drawcords for a clean, structural architectural shape.",
+    "category": "hoodies",
+    "collections": ["new-season"],
+    "price": 5490,
+    "compareAtPrice": 6500,
+    "currency": "PKR",
+    "images": [
+      "images/products/hoodie-taupe-1.jpg",
+      "images/products/hoodie-taupe-2.jpg",
+      "images/products/hoodie-black-1.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      {
+        "name": "Taupe",
+        "hex": "#8A7663",
+        "images": ["images/products/hoodie-taupe-1.jpg", "images/products/hoodie-taupe-2.jpg"]
+      },
+      {
+        "name": "Black",
+        "hex": "#1E1B18",
+        "images": ["images/products/hoodie-black-1.jpg", "images/products/hoodie-black-2.jpg"]
+      }
+    ],
+    "stockStatus": "in-stock",
+    "availability": true,
+    "featured": false,
+    "newArrival": true,
+    "sale": true,
+    "badges": ["NEW"],
+    "tags": ["fleece", "terry-cotton", "heavyweight", "hoodie"],
+    "details": [
+      "420 GSM heavy French Terry cotton",
+      "Seamless clean-front design (no drawcords)",
+      "Double-lined, heavy-weight structural hood",
+      "Ribbed side-gusset panels for ease of movement",
+      "Pre-shrunk and garment dyed"
+    ],
+    "material": "100% Loopback French Terry Cotton",
+    "fit": "Slightly cropped and boxy. Drop shoulder styling.",
+    "care": "Wash cold inside out on gentle cycle. Lay flat to dry to preserve structure.",
+    "seo": {
+      "title": "Structured Fleece Hoodie — Heavy French Terry | VELIN",
+      "description": "Crafted from 420 GSM French Terry cotton, the VELIN Structured Hoodie offers unparalleled architectural shape, comfort, and longevity.",
+      "canonicalPath": "/product/structured-fleece-hoodie",
+      "ogImage": "images/products/hoodie-taupe-1.jpg"
+    }
+  },
+  {
+    "id": "prod-05",
+    "name": "Cropped Linen Jacket",
+    "slug": "cropped-linen-jacket",
+    "description": "A lightweight outerwear jacket made of substantial textured linen. Cut short and square, featuring a heavy metal zipper, a structured collar, two minimalist chest welt pockets, and adjustable waist tabs.",
+    "category": "jackets",
+    "collections": ["the-essentials"],
+    "price": 6890,
+    "compareAtPrice": 0,
+    "currency": "PKR",
+    "images": [
+      "images/products/jacket-brown-1.jpg",
+      "images/products/jacket-brown-2.jpg",
+      "images/products/jacket-cream-1.jpg"
+    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": [
+      {
+        "name": "Brown",
+        "hex": "#54463C",
+        "images": ["images/products/jacket-brown-1.jpg", "images/products/jacket-brown-2.jpg"]
+      },
+      {
+        "name": "Cream",
+        "hex": "#EBE5D8",
+        "images": ["images/products/jacket-cream-1.jpg", "images/products/jacket-cream-2.jpg"]
+      }
+    ],
+    "stockStatus": "in-stock",
+    "availability": true,
+    "featured": true,
+    "newArrival": false,
+    "sale": false,
+    "badges": [],
+    "tags": ["jacket", "linen", "outerwear", "minimal"],
+    "details": [
+      "Premium heavy linen shell with breathable cotton lining",
+      "YKK metal zipper front closure",
+      "Adjustable button tabs at side waist",
+      "Discreet side welt pockets and internal passport pocket",
+      "Clean double-stitched finishing"
+    ],
+    "material": "Shell: 100% heavy linen; Lining: 100% fine cotton",
+    "fit": "Cropped, boxy fit. Fits true to size. Take your normal size.",
+    "care": "Dry clean only to maintain collar structure.",
+    "seo": {
+      "title": "Cropped Linen Jacket — Premium Outerwear | VELIN",
+      "description": "The Cropped Linen Jacket by VELIN features a minimal utility silhouette in heavy textured linen. Perfect layering jacket for transitional weather.",
+      "canonicalPath": "/product/cropped-linen-jacket",
+      "ogImage": "images/products/jacket-brown-1.jpg"
+    }
+  },
+  {
+    "id": "prod-06",
+    "name": "Minimalist Leather Tote",
+    "slug": "minimalist-leather-tote",
+    "description": "An elegant, unlined tote bag crafted from full-grain Pakistani calfskin leather. Features a spacious interior main compartment, an integrated zippered hanging pocket for small valuables, and raw edges that age beautifully over time.",
+    "category": "accessories",
+    "collections": ["new-season", "everyday-edit"],
+    "price": 12500,
+    "compareAtPrice": 16000,
+    "currency": "PKR",
+    "images": [
+      "images/products/tote-brown-1.jpg",
+      "images/products/tote-brown-2.jpg"
+    ],
+    "sizes": ["One Size"],
+    "colors": [
+      {
+        "name": "Tan Brown",
+        "hex": "#8B5A36",
+        "images": ["images/products/tote-brown-1.jpg", "images/products/tote-brown-2.jpg"]
+      }
+    ],
+    "stockStatus": "in-stock",
+    "availability": true,
+    "featured": false,
+    "newArrival": true,
+    "sale": true,
+    "badges": ["LIMITED"],
+    "tags": ["leather", "tote", "handbag", "calfskin"],
+    "details": [
+      "100% Full-grain calfskin leather",
+      "Durable double-stitched leather shoulder straps",
+      "Hanging internal zip-pocket and metal key clasp",
+      "Dimensions: 14\" H x 18\" W x 6\" D (Drop: 11\")",
+      "Handcrafted in Karachi"
+    ],
+    "material": "100% Genuine Calfskin Leather",
+    "fit": "One size. Roomy utility format.",
+    "care": "Treat with quality leather conditioner. Avoid exposure to heavy rain. Wipe dry with soft cloth.",
+    "seo": {
+      "title": "Minimalist Full-Grain Leather Tote Bag | VELIN",
+      "description": "Crafted from full-grain calfskin leather, this raw-edge minimalist tote is designed to hold your laptop and everyday essentials in timeless style.",
+      "canonicalPath": "/product/minimalist-leather-tote",
+      "ogImage": "images/products/tote-brown-1.jpg"
+    }
+  },
+  {
+    "id": "prod-07",
+    "name": "Classic Sunglasses",
+    "slug": "classic-sunglasses",
+    "description": "A timeless round D-frame sunglass model carved from biodegradable hand-polished acetate. Outfitted with premium scratch-resistant polarized CR-39 lenses offering complete UV400 defense.",
+    "category": "accessories",
+    "collections": ["new-season"],
+    "price": 4500,
+    "compareAtPrice": 0,
+    "currency": "PKR",
+    "images": [
+      "images/products/shades-tortoise-1.jpg",
+      "images/products/shades-tortoise-2.jpg"
+    ],
+    "sizes": ["One Size"],
+    "colors": [
+      {
+        "name": "Tortoise Shell",
+        "hex": "#5A3A1B",
+        "images": ["images/products/shades-tortoise-1.jpg", "images/products/shades-tortoise-2.jpg"]
+      }
+    ],
+    "stockStatus": "in-stock",
+    "availability": true,
+    "featured": false,
+    "newArrival": true,
+    "sale": false,
+    "badges": ["NEW"],
+    "tags": ["sunglasses", "eyewear", "polarized", "acetate"],
+    "details": [
+      "Hand-polished cellulose acetate frame",
+      "Green G-15 polarized CR-39 lenses",
+      "100% UVA/UVB protection (UV400)",
+      "Reinforced 5-barrel metal hinges",
+      "Comes with custom leather sleeve and cleaning cloth"
+    ],
+    "material": "Cellulose Acetate & Polarized Lenses",
+    "fit": "Medium face width fit. Universal nose bridge.",
+    "care": "Wash with soapy water or lens cleaner. Wipe with provided microfiber cloth.",
+    "seo": {
+      "title": "Classic Polarized Sunglasses — Hand-Polished | VELIN",
+      "description": "Shop the Classic Polarized Sunglasses from VELIN. Acetate frame, premium CR-39 UV400 lenses, and an iconic D-frame silhouette.",
+      "canonicalPath": "/product/classic-sunglasses",
+      "ogImage": "images/products/shades-tortoise-1.jpg"
+    }
+  },
+  {
+    "id": "prod-08",
+    "name": "Premium Knit Cardigan",
+    "slug": "premium-knit-cardigan",
+    "description": "An exceptionally cozy, mid-weight cardigan knitted in a waffle-stitch structure from ultra-fine Merino wool and organic cotton. Perfect layering piece characterized by a ribbed v-neck, dropped shoulders, and natural walnut shell buttons.",
+    "category": "jackets",
+    "collections": ["new-season", "everyday-edit"],
+    "price": 7490,
+    "compareAtPrice": 9500,
+    "currency": "PKR",
+    "images": [
+      "images/products/cardigan-cream-1.jpg",
+      "images/products/cardigan-cream-2.jpg",
+      "images/products/cardigan-charcoal-1.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      {
+        "name": "Cream",
+        "hex": "#F3EEE4",
+        "images": ["images/products/cardigan-cream-1.jpg", "images/products/cardigan-cream-2.jpg"]
+      },
+      {
+        "name": "Charcoal",
+        "hex": "#302E2B",
+        "images": ["images/products/cardigan-charcoal-1.jpg", "images/products/cardigan-charcoal-2.jpg"]
+      }
+    ],
+    "stockStatus": "in-stock",
+    "availability": true,
+    "featured": false,
+    "newArrival": true,
+    "sale": true,
+    "badges": ["PREMIUM"],
+    "tags": ["knitwear", "cardigan", "wool", "cotton"],
+    "details": [
+      "55% Fine Merino Wool, 45% Long-staple Organic Cotton",
+      "Breathable waffle-stitch knit pattern",
+      "Ribbed cuffs, hem, and deep V-neckline placket",
+      "Genuine polished walnut-shell buttons",
+      "Pre-shrunk soft-wash finish"
+    ],
+    "material": "55% Merino Wool, 45% Organic Cotton",
+    "fit": "Relaxed drape, standard length. Model is 6'0\" wearing size M.",
+    "care": "Dry clean or hand wash cold with wool detergent. Do not wring. Reshape and dry flat.",
+    "seo": {
+      "title": "Premium Knit Cardigan — Merino Wool & Cotton Blend | VELIN",
+      "description": "Stay warm in style with the Premium Knit Cardigan from VELIN. Crafted from ultra-fine Merino wool and organic cotton with beautiful waffle texture and natural buttons.",
+      "canonicalPath": "/product/premium-knit-cardigan",
+      "ogImage": "images/products/cardigan-cream-1.jpg"
+    }
+  }
+]

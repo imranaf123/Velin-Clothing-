@@ -1,0 +1,44 @@
+[
+  {
+    "id": "col-01",
+    "name": "The Essentials",
+    "slug": "the-essentials",
+    "description": "The foundation of your modern wardrobe. Premium materials and timeless silhouettes designed for daily life.",
+    "image": "images/collections/essentials.jpg",
+    "products": ["prod-01", "prod-02", "prod-03", "prod-05"],
+    "featured": true,
+    "seo": {
+      "title": "The Essentials Collection | VELIN",
+      "description": "Explore the foundation of your modern wardrobe. Premium everyday pieces designed for ultimate comfort and classic style.",
+      "canonicalPath": "/collections/the-essentials"
+    }
+  },
+  {
+    "id": "col-02",
+    "name": "New Season",
+    "slug": "new-season",
+    "description": "Discover our latest additions. Refined cuts, seasonal hues, and elevated textures crafted for the transition of weather.",
+    "image": "images/collections/new-season.jpg",
+    "products": ["prod-01", "prod-04", "prod-06", "prod-07", "prod-08"],
+    "featured": true,
+    "seo": {
+      "title": "New Season Arrivals | VELIN",
+      "description": "Discover our latest seasonal additions. Refined cuts, neutral tones, and premium fabrics crafted for the modern uniform.",
+      "canonicalPath": "/collections/new-season"
+    }
+  },
+  {
+    "id": "col-03",
+    "name": "Everyday Edit",
+    "slug": "everyday-edit",
+    "description": "A curated selection of versatile pieces that harmonize effortlessly for easy, confident dressing.",
+    "image": "images/collections/everyday-edit.jpg",
+    "products": ["prod-02", "prod-03", "prod-06", "prod-08"],
+    "featured": true,
+    "seo": {
+      "title": "Everyday Edit: Harmonious Wardrobe | VELIN",
+      "description": "Curated selection of versatile clothing designed to blend together. Experience effortless dressing with VELIN.",
+      "canonicalPath": "/collections/everyday-edit"
+    }
+  }
+]

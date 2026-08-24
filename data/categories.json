@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cat-01",
+    "name": "T-Shirts",
+    "slug": "t-shirts",
+    "description": "Premium weight tees with refined silhouettes and exceptional comfort.",
+    "image": "images/categories/t-shirts.jpg",
+    "featured": true,
+    "seo": {
+      "title": "Premium Everyday T-Shirts | VELIN",
+      "description": "Discover premium heavyweight t-shirts by VELIN. Designed with a clean silhouette, comfortable fit, and premium cotton for everyday comfort.",
+      "canonicalPath": "/category/t-shirts"
+    }
+  },
+  {
+    "id": "cat-02",
+    "name": "Shirts",
+    "slug": "shirts",
+    "description": "Relaxed and structured shirts tailored from breathably light fabrics.",
+    "image": "images/categories/shirts.jpg",
+    "featured": true,
+    "seo": {
+      "title": "Elevated Shirts for Men & Women | VELIN",
+      "description": "Tailored and relaxed shirts from VELIN. Made from premium linen and lightweight cotton for a polished everyday look.",
+      "canonicalPath": "/category/shirts"
+    }
+  },
+  {
+    "id": "cat-03",
+    "name": "Trousers",
+    "slug": "trousers",
+    "description": "Tailored and casual trousers crafted with clean lines and fluid drapes.",
+    "image": "images/categories/trousers.jpg",
+    "featured": true,
+    "seo": {
+      "title": "Minimalist Trousers & Pants | VELIN",
+      "description": "Browse our collection of tailored and casual trousers, designed with clean silhouettes and comfortable drapes.",
+      "canonicalPath": "/category/trousers"
+    }
+  },
+  {
+    "id": "cat-04",
+    "name": "Hoodies",
+    "slug": "hoodies",
+    "description": "Substantial warmth and structured drapes in premium luxury fleece.",
+    "image": "images/categories/hoodies.jpg",
+    "featured": true,
+    "seo": {
+      "title": "Structured Fleece Hoodies | VELIN",
+      "description": "Experience luxury warmth with VELIN fleece hoodies. Perfect structured drapes in understated neutral shades.",
+      "canonicalPath": "/category/hoodies"
+    }
+  },
+  {
+    "id": "cat-05",
+    "name": "Jackets",
+    "slug": "jackets",
+    "description": "Refined outerwear designed to transition seamlessly across seasons.",
+    "image": "images/categories/jackets.jpg",
+    "featured": true,
+    "seo": {
+      "title": "Premium Outerwear & Jackets | VELIN",
+      "description": "Discover VELIN jackets. Lightweight premium outerwear crafted to elevate your daily style with quiet confidence.",
+      "canonicalPath": "/category/jackets"
+    }
+  },
+  {
+    "id": "cat-06",
+    "name": "Accessories",
+    "slug": "accessories",
+    "description": "Minimal leather goods and essentials to complete your everyday uniform.",
+    "image": "images/categories/accessories.jpg",
+    "featured": true,
+    "seo": {
+      "title": "Minimalist Accessories | VELIN",
+      "description": "Shop minimal leather totes, premium sunglasses, and daily essentials from the VELIN accessories collection.",
+      "canonicalPath": "/category/accessories"
+    }
+  }
+]
