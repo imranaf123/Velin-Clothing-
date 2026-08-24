@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://velin.com/sitemap.xml
+Sitemap: https://velin-clothing.vercel.app/sitemap.xml
